@@ -9,7 +9,7 @@
     <script>
         //1)Print odd numbers in an array
         //anonymous function
-         let odd_num = function(array){
+         var odd_num = function(array){
                   for(var i = 0 ; i< array.length ; i++){
                         if(array[i]%2!=0){
                            console.log(array[i])
@@ -39,7 +39,7 @@
         //2)Convert all the strings to title caps in a string array
    
         //anonymous :   
-        let tittleCaps = function (str) { 
+        var tittleCaps = function (str) { 
                     str = str.toLowerCase().split(' ');
                     for (var i = 0; i < str.length; i++) {
                       str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
@@ -65,7 +65,7 @@
         }
         //3)Sum of all numbers in an array 
         //anonymous  :  
-        let sumAll = function(array){
+        var sumAll = function(array){
                   var sum = 0;
                   for(var i = 0 ; i< array.length ; i++){
                      sum = sum + array[i];
@@ -91,7 +91,7 @@
         }
         //4)Return all the prime numbers in an array
         //Anonymous Function:
-        let primeNumber = function(numArray){
+        var primeNumber = function(numArray){
                       numArray = numArray.filter((number) => {
                         for (var i = 2; i <= Math.sqrt(number); i++) {
                           if (number % i === 0) return false;
@@ -137,7 +137,7 @@
         }
     
         //Anonymous Function :  
-        let palindrome = function (arr, n)
+        var palindrome = function (arr, n)
         {
         for (let i = 0; i < n; i++)
         {
@@ -172,10 +172,10 @@
         }
         return true;
         }
-        //Return median of two sorted arrays of same size
+
         //Remove duplicates from an Array
         //Anonymous Function : 
-        let duplicates = function(array){
+        var duplicates = function(array){
             let dup = [...new Set(array)];
             console.log(dup);
         }
@@ -199,7 +199,7 @@
         }
         }
         //Anonymous function : 
-        let rotate = function(array , k){
+        var rotate = function(array , k){
         k = k % a.length;
             if(k < 0){
                 k += a.length;
